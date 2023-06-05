@@ -1,7 +1,13 @@
 # news_scraper
 This is a web scraper specifically designed to scrape URLs from the BBC News website. It utilizes the Selenium, BS4 and Requests libraries to automate web browser interactions.
 
-Additional Notes
+## How to run:
+
+1. Create your virtual environment
+2. Change the directory to /src
+3. Run "python main.py".
+
+### Additional Notes
 
 - The script uses a regular expression pattern (self.pattern) to filter the URLs to be scraped. You can modify this pattern to match your specific requirements.
 
