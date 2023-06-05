@@ -34,15 +34,18 @@ class ScraperArt:
                 conn.close()
 
     def scrape_url(self, id, url):
-        instance = Article(url)
-        data = {
-            'title' : instance.title,
-            'body' : instance.body
-        }
-        file_name = str(id) + '.json'
-        file_path = os.path.join(self.data_dir, file_name)
-        with open(file_path, 'w') as json_file:
-            json.dump(data, json_file)
+        try:
+            instance = Article(url)
+            data = {
+                'title' : instance.title,
+                'body' : instance.body
+            }
+            file_name = str(id) + '.json'
+            file_path = os.path.join(self.data_dir, file_name)
+            with open(file_path, 'w') as json_file:
+                json.dump(data, json_file)
+        except:
+            pass
         
 if __name__ == '__main__':
     ArtScraper = ScraperArt()
