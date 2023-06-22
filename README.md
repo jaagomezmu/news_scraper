@@ -16,7 +16,7 @@ This is a web scraper specifically designed to scrape URLs from the BBC News web
 - The maximum number of pages that the scraper will visit can be adjusted by modifying the self.num_pag variable in the process_page method.
 
 ### Tree
-.
+.  
 ├── data  
 ├── requirements.txt  
 ├── src  
