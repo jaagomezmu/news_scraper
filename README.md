@@ -17,7 +17,7 @@ This is a web scraper specifically designed to scrape URLs from the BBC News web
 
 ### Tree
 .
-├── data
-├── requirements.txt
-├── src
-└── utils
+├── data  
+├── requirements.txt  
+├── src  
+└── utils  
